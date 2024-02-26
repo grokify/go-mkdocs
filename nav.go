@@ -16,9 +16,7 @@ func (t Texts) Markdown(prefix, indent string) []string {
 				parts = append(parts, ti.Key+":")
 				lines = append(lines, strings.Join(parts, " "))
 				clines := ti.Children.Markdown(prefix+indent, indent)
-				for _, cline := range clines {
-					lines = append(lines, cline)
-				}
+				lines = append(lines, clines...)
 			} else {
 				parts = append(parts, ti.Key)
 				lines = append(lines, strings.Join(parts, " "))
