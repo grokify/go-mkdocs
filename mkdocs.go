@@ -6,6 +6,8 @@ import (
 	yaml "gopkg.in/yaml.v3"
 )
 
+const ThemeReadTheDocs = "readthedocs"
+
 type Config struct {
 	SiteName           string `json:"site_name" yaml:"site_name"`
 	SiteURL            string `json:"site_url" yaml:"site_url"`
