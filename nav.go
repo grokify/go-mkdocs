@@ -13,9 +13,8 @@ func (t Texts) Markdown(prefix, indent string) []string {
 		parts := []string{prefix + "-"}
 		if ti.Key != "" {
 			quotedKey := QuoteString(ti.Key)
-			quotedVal := QuoteString(ti.Val)
 			if ti.Val != "" {
-				parts = append(parts, quotedKey+":", quotedVal)
+				parts = append(parts, quotedKey+":", QuoteString(ti.Val))
 				lines = append(lines, strings.Join(parts, " "))
 			} else if len(ti.Children) > 0 {
 				parts = append(parts, quotedKey+":")
