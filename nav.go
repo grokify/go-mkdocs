@@ -12,21 +12,33 @@ func (t Texts) Markdown(prefix, indent string) []string {
 	for _, ti := range t {
 		parts := []string{prefix + "-"}
 		if ti.Key != "" {
+			quotedKey := QuoteString(ti.Key)
+			quotedVal := QuoteString(ti.Val)
 			if ti.Val != "" {
-				parts = append(parts, ti.Key+":", ti.Val)
+				parts = append(parts, quotedKey+":", quotedVal)
 				lines = append(lines, strings.Join(parts, " "))
 			} else if len(ti.Children) > 0 {
-				parts = append(parts, ti.Key+":")
+				parts = append(parts, quotedKey+":")
 				lines = append(lines, strings.Join(parts, " "))
 				clines := ti.Children.Markdown(prefix+indent, indent)
 				lines = append(lines, clines...)
 			} else {
-				parts = append(parts, ti.Key)
+				parts = append(parts, quotedKey)
 				lines = append(lines, strings.Join(parts, " "))
 			}
 		}
 	}
 	return lines
+}
+
+func QuoteString(s string) string {
+	if !strings.Contains(s, "'") {
+		return "'" + s + "'"
+	} else if !strings.Contains(s, `"`) {
+		return `"` + s + `"`
+	} else {
+		return s
+	}
 }
 
 type Text struct {
