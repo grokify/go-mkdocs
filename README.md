@@ -9,8 +9,10 @@ Go MkDocs (`go-mkdocs`) is a package to work with [MkDocs](https://www.mkdocs.or
 
  [used-by-svg]: https://sourcegraph.com/github.com/grokify/go-mkdocs/-/badge.svg
  [used-by-url]: https://sourcegraph.com/github.com/grokify/go-mkdocs?badge
- [build-status-svg]: https://github.com/grokify/go-mkdocs/workflows/test/badge.svg
- [build-status-url]: https://github.com/grokify/go-mkdocs/actions/workflows/test.yaml
+ [build-status-svg]: https://github.com/grokify/go-mkdocs/actions/workflows/ci.yaml/badge.svg?branch=master
+ [build-status-url]: https://github.com/grokify/go-mkdocs/actions/workflows/ci.yaml
+ [lint-status-svg]: https://github.com/grokify/go-mkdocs/actions/workflows/lint.yaml/badge.svg?branch=master
+ [lint-status-url]: https://github.com/grokify/go-mkdocs/actions/workflows/lint.yaml
  [goreport-svg]: https://goreportcard.com/badge/github.com/grokify/go-mkdocs
  [goreport-url]: https://goreportcard.com/report/github.com/grokify/go-mkdocs
  [docs-godoc-svg]: https://pkg.go.dev/badge/github.com/grokify/go-mkdocs
