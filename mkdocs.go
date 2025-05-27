@@ -11,7 +11,7 @@ type Config struct {
 	SiteURL            string `json:"site_url" yaml:"site_url"`
 	DocsDir            string `json:"docs_dir" yaml:"docs_dir"`
 	Theme              string `json:"theme" yaml:"theme"`
-	MarkdownExtensions []any  `json:"markdown_extensions" yaml:"markdown_extension"`
+	MarkdownExtensions []any  `json:"markdown_extensions,omitempty" yaml:"markdown_extension,omitempty"`
 	Nav                Texts  `json:"-" yaml:"-"`
 }
 
