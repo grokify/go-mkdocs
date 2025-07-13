@@ -22,7 +22,9 @@ func StringToAnchor(s string) string {
 		strings.Join(
 			strings.Fields(
 				rxNonAlphaNumeric.ReplaceAllString(
-					strings.ToLower(unicodeutil.RemoveDiacritics(s, mkdocsRemoveDiacriticsOverride)),
+					strings.ToLower(
+						unicodeutil.RemoveDiacritics(s, mkdocsRemoveDiacriticsOverride),
+					),
 					"",
 				),
 			),
