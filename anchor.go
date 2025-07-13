@@ -9,7 +9,6 @@ import (
 
 var (
 	rxNonAlphaNumeric = regexp.MustCompile(`[^0-9a-zA-Z\s\-]`)
-	rxSpaces          = regexp.MustCompile(`\s+`)
 	rxHyphens         = regexp.MustCompile(`\-+`)
 )
 
@@ -20,10 +19,12 @@ func StringToAnchor(s string) string {
 	mkdocsRemoveDiacriticsOverride := map[rune][]rune{'™': {'t', 'm'}}
 
 	return rxHyphens.ReplaceAllString(
-		rxSpaces.ReplaceAllString(
-			rxNonAlphaNumeric.ReplaceAllString(
-				strings.ToLower(unicodeutil.RemoveDiacritics(s, mkdocsRemoveDiacriticsOverride)),
-				"",
+		strings.Join(
+			strings.Fields(
+				rxNonAlphaNumeric.ReplaceAllString(
+					strings.ToLower(unicodeutil.RemoveDiacritics(s, mkdocsRemoveDiacriticsOverride)),
+					"",
+				),
 			),
 			outputSep,
 		),
