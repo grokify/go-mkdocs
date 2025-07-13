@@ -6,7 +6,7 @@
 [![Docs][docs-godoc-svg]][docs-godoc-url]
 [![License][license-svg]][license-url]
 
-Go MkDocs (`go-mkdocs`) is a package to work with [MkDocs](https://www.mkdocs.org/). Initial capabilities are to programmatically generate a `mkdocs.yml` file.
+Go MkDocs (`go-mkdocs`) is a package to work with [MkDocs](https://www.mkdocs.org/). Initial capabilities are to programmatically generate a `mkdocs.yml` file and HTTP URL anchors.
 
  [used-by-svg]: https://sourcegraph.com/github.com/grokify/go-mkdocs/-/badge.svg
  [used-by-url]: https://sourcegraph.com/github.com/grokify/go-mkdocs?badge
