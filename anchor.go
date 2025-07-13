@@ -9,7 +9,7 @@ import (
 
 var (
 	rxNonAlphaNumeric = regexp.MustCompile(`[^0-9a-zA-Z\s\-]`)
-	rxHyphens         = regexp.MustCompile(`\-+`)
+	rxHyphens         = regexp.MustCompile(`\-\-+`)
 )
 
 // StringToAnchor is an implementation of the MkDocs algorithm to convert strings to
