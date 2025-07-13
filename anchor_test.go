@@ -27,6 +27,9 @@ func TestStringToAnchor(t *testing.T) {
 		{
 			"trademark™ (mark) from example.com",
 			"trademarktm-mark-from-examplecom"},
+		{
+			"trademark™  ( mark  )  from  example.com",
+			"trademarktm-mark-from-examplecom"},
 	}
 
 	for _, tt := range stringToAnchorTests {
