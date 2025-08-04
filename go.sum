@@ -1,5 +1,5 @@
-github.com/grokify/mogo v0.70.13 h1:JSJ9wmQcWPoaobMFDG1IDHN1QxSIP5+2ef56uitlMek=
-github.com/grokify/mogo v0.70.13/go.mod h1:QjS8z1s0fMwCMxJkODUhq5NHFjHZiZNf4E5TUIfz4+w=
+github.com/grokify/mogo v0.70.16 h1:nmAJiPcEdWF0icy/xvTuxZR6q9WwpkpHXn+ooLzizGA=
+github.com/grokify/mogo v0.70.16/go.mod h1:VIO/CycVjfvZAMwx6bQMI490nV5EPkSS2H9AjKfq27Y=
 golang.org/x/text v0.27.0 h1:4fGWRpyh641NLlecmyl4LOe6yDdfaYNrGb2zdfo4JV4=
 golang.org/x/text v0.27.0/go.mod h1:1D28KMCvyooCX9hBiosv5Tz/+YLxj0j7XhWjpSUF7CU=
 gopkg.in/check.v1 v0.0.0-20161208181325-20d25e280405 h1:yhCVgyC4o1eVCa2tZl7eS0r+SDo693bJlVdllGtEeKM=
