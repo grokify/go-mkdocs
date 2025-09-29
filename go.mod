@@ -3,7 +3,7 @@ module github.com/grokify/go-mkdocs
 go 1.24.1
 
 require (
-	github.com/grokify/mogo v0.70.23
+	github.com/grokify/mogo v0.71.0
 	gopkg.in/yaml.v3 v3.0.1
 )
 
