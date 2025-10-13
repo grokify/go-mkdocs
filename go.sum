@@ -1,7 +1,7 @@
-github.com/grokify/mogo v0.71.1 h1:ywcvIxpdmYr+ajk1Zt6gmiSUvayB7LX2Qod1FRTD3Zc=
-github.com/grokify/mogo v0.71.1/go.mod h1:QWKDYk/zpWJfZdno0lAeIgrtxPG06IKsR9aMljW2mwI=
-golang.org/x/text v0.29.0 h1:1neNs90w9YzJ9BocxfsQNHKuAT4pkghyXc4nhZ6sJvk=
-golang.org/x/text v0.29.0/go.mod h1:7MhJOA9CD2qZyOKYazxdYMF85OwPdEr9jTtBpO7ydH4=
+github.com/grokify/mogo v0.71.3 h1:pyKaemxp/cRur8XkAN+X/tvuuS4M4/NjdmPE6peMVLA=
+github.com/grokify/mogo v0.71.3/go.mod h1:sjelEb87kMJPyJrJXfI7qwP+pQwd+Icm9Au7NTAB0Fw=
+golang.org/x/text v0.30.0 h1:yznKA/E9zq54KzlzBEAWn1NXSQ8DIp/NYMy88xJjl4k=
+golang.org/x/text v0.30.0/go.mod h1:yDdHFIX9t+tORqspjENWgzaCVXgk0yYnYuSZ8UzzBVM=
 gopkg.in/check.v1 v0.0.0-20161208181325-20d25e280405 h1:yhCVgyC4o1eVCa2tZl7eS0r+SDo693bJlVdllGtEeKM=
 gopkg.in/check.v1 v0.0.0-20161208181325-20d25e280405/go.mod h1:Co6ibVJAznAaIkqp8huTwlJQCZ016jof/cbN4VW5Yz0=
 gopkg.in/yaml.v3 v3.0.1 h1:fxVm/GzAzEWqLHuvctI91KS9hhNmmWOoWu0XTYJS7CA=
